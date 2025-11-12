@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:columnCount="1"
+    android:rowCount="9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:paddingHorizontal="250px"
+        android:paddingVertical="50px"
+        android:text="Zarejestruj się"
+        android:textSize="34sp" />
+
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nazwa użytkownika"
+        android:textColor="#818181" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:ems="10"
+        android:inputType="text"
+        android:text="E-mail"
+        android:textColor="#8A8585" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Podaj datę urodzenia"
+        android:textColor="#8A8585" />
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:text="Podaj hasło:"
+        android:textColor="#7C7C7C"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="120px"
+        android:shadowColor="#FAFAFA"
+        android:text="Zarejestruj się" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:text="Powtórz hasło"
+        android:textColor="#7C7C7C"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textColor="#7C7C7C"
+        android:textSize="18sp"/>
+
+
+</GridLayout>
