@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="Rejestracja"
+            style="@style/FormHeaderText"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:text="Imię:" />
+                <EditText
+                    android:hint="Wpisz imię"
+                    android:inputType="textPersonName"
+                    style="@style/FormEditText"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Nazwisko:" />
+                <EditText
+                    android:hint="Wpisz nazwisko"
+                    android:inputType="textPersonName"
+                    style="@style/FormEditText"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Email:" />
+                <EditText
+                    android:hint="Wpisz email"
+                    android:inputType="textEmailAddress"
+                    style="@style/FormEditText"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Hasło:" />
+                <EditText
+                    android:hint="Wpisz hasło"
+                    android:inputType="textPassword"
+                    style="@style/FormEditText"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Potwierdź hasło:" />
+                <EditText
+                    android:hint="Powtórz hasło"
+                    android:inputType="textPassword"
+                    style="@style/FormEditText"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:text="Zarejestruj"
+                    style="@style/FormButton"
+                    android:layout_span="2"
+                    android:layout_marginTop="16dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
