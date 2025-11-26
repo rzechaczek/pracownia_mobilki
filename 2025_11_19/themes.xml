@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Themes" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Themes" parent="Base.Theme.Themes" />
+    <!-- Testowane motywy:
+        Theme.Themes
+        Theme.App.Light,
+        Theme.App.Light.NoActionBar,
+        Theme.App.Dark,
+        Theme.App.MaterialLight,
+        Theme.App.MaterialDark
+   -->
+
+    <style name="Theme.App.Light" parent="@android:style/Theme.Light">
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:colorAccent">#FF4081</item>
+    </style>
+
+    <style name="Theme.App.Light.NoActionBar" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:colorBackground">#FAFAFA</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:colorAccent">#3F51B5</item>
+    </style>
+
+    <style name="Theme.App.Dark" parent="@android:style/Theme.Black">
+        <item name="android:colorBackground">#121212</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:colorAccent">#FF5722</item>
+    </style>
+
+
+    <style name="Theme.App.MaterialLight" parent="android:Theme.Material.Light">
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:colorAccent">#009688</item>
+    </style>
+
+    <style name="Theme.App.MaterialDark" parent="android:Theme.Material">
+        <item name="android:colorBackground">#303030</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:colorAccent">#FF9800</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="CustomButtonDark" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:backgroundTint">#3F51B5</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="CustomEditTextDark" parent="Widget.AppCompat.EditText">
+        <item name="android:backgroundTint">#FF5722</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>
