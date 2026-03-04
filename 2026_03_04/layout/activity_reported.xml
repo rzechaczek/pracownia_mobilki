@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Obrazek: top/bottom 30dp, left/right 20dp, width=match_parent, height=wrap_content, opis -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="Logo ZSK"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true" />
+
+    <!-- Zagnieżdżony LinearLayout: match_parent/match_parent, vertical, margin L/R 20dp -->
+    <LinearLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            style="@style/heading"
+            android:text="Zapisano uwagę" />
+
+        <TextView
+            android:id="@+id/tvFirstNameLabel"
+            style="@style/label"
+            android:text="Imię" />
+
+        <TextView
+            android:id="@+id/reported_name"
+            style="@style/reported"
+            android:text="..." />
+
+        <TextView
+            android:id="@+id/tvLastNameLabel"
+            style="@style/label"
+            android:text="Nazwisko" />
+
+        <TextView
+            android:id="@+id/reported_surname"
+            style="@style/reported"
+            android:text="..." />
+
+        <TextView
+            android:id="@+id/tvClassLabel"
+            style="@style/label"
+            android:text="Klasa" />
+
+        <TextView
+            android:id="@+id/reported_class"
+            style="@style/reported"
+            android:text="..." />
+
+        <Button
+            android:id="@+id/btnAddNew"
+            style="@style/button"
+            android:text="Dodaj nową uwagę" />
+
+    </LinearLayout>
+
+</LinearLayout>

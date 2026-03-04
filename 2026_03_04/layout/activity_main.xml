@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="Logo ZSK"
+        android:src="@drawable/logo" />
+
+
+    <LinearLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            style="@style/heading"
+            android:text="Zgłoś brak mundurka" />
+
+        <TextView
+            android:id="@+id/tvFirstNameLabel"
+            style="@style/label"
+            android:text="Imię" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            style="@style/input"
+            android:hint="Wpisz imię" />
+
+        <TextView
+            android:id="@+id/tvLastNameLabel"
+            style="@style/label"
+            android:text="Nazwisko" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            style="@style/input"
+            android:hint="Wpisz nazwisko" />
+
+        <TextView
+            android:id="@+id/tvClassLabel"
+            style="@style/label"
+            android:text="Klasa" />
+
+        <EditText
+            android:id="@+id/etClass"
+            style="@style/input"
+            android:hint="Np. 1A, 2B" />
+
+        <Button
+            android:id="@+id/btnReport"
+            style="@style/button"
+            android:text="Zapisz uwagę" />
+    </LinearLayout>
+
+</LinearLayout>
